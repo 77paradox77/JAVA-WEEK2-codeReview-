@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DefinitionTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2016-04-29T23:20:00" hostname="epicodus-54.local" time="0.003">
+<testsuite name="DefinitionTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2016-04-30T00:32:00" hostname="epicodus-54.local" time="0.008">
   <properties/>
   <testcase name="find_returnsDefinitionWithSameId_secondDefinition" classname="DefinitionTest" time="0.001"/>
-  <testcase name="clear_emptiesAllDefinitionsFromArrayList_0" classname="DefinitionTest" time="0.0"/>
+  <testcase name="clear_emptiesAllDefinitionsFromArrayList_0" classname="DefinitionTest" time="0.001"/>
   <testcase name="Definition_instantiatesWithDescription_String" classname="DefinitionTest" time="0.0"/>
-  <testcase name="all_returnsAllInstancesOfDefinition_true" classname="DefinitionTest" time="0.001"/>
-  <testcase name="find_returnsNullWhenNoDefinitionFound_null" classname="DefinitionTest" time="0.0"/>
+  <testcase name="all_returnsAllInstancesOfDefinition_true" classname="DefinitionTest" time="0.0"/>
+  <testcase name="find_returnsNullWhenNoDefinitionFound_null" classname="DefinitionTest" time="0.001"/>
   <testcase name="getCreatedAt_instantiatesWithCurrentTime_today" classname="DefinitionTest" time="0.0"/>
-  <testcase name="isCompleted_isFalseAfterInstantiation_false" classname="DefinitionTest" time="0.0"/>
-  <testcase name="Definition_instantiatesCorrectly_true" classname="DefinitionTest" time="0.0"/>
-  <testcase name="newId_DefinitionsInstantiateWithAnID_true" classname="DefinitionTest" time="0.0"/>
+  <testcase name="isCompleted_isFalseAfterInstantiation_false" classname="DefinitionTest" time="0.001"/>
+  <testcase name="Definition_instantiatesCorrectly_true" classname="DefinitionTest" time="0.001"/>
+  <testcase name="newId_DefinitionsInstantiateWithAnID_true" classname="DefinitionTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

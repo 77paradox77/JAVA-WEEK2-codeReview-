@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TaskTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2016-04-29T23:20:00" hostname="epicodus-54.local" time="0.002">
+<testsuite name="TaskTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2016-04-30T00:32:00" hostname="epicodus-54.local" time="0.005">
   <properties/>
   <testcase name="find_returnsNullWhenNoTaskFound_null" classname="TaskTest" time="0.0"/>
   <testcase name="task_instantiatesCorrectly_true" classname="TaskTest" time="0.0"/>
-  <testcase name="getCreatedAt_instantiatesWithCurrentTime_today" classname="TaskTest" time="0.0"/>
+  <testcase name="getCreatedAt_instantiatesWithCurrentTime_today" classname="TaskTest" time="0.002"/>
   <testcase name="isCompleted_isFalseAfterInstantiation_false" classname="TaskTest" time="0.0"/>
-  <testcase name="newId_tasksInstantiateWithAnID_true" classname="TaskTest" time="0.0"/>
+  <testcase name="newId_tasksInstantiateWithAnID_true" classname="TaskTest" time="0.001"/>
   <testcase name="all_returnsAllInstancesOfTask_true" classname="TaskTest" time="0.0"/>
   <testcase name="find_returnsTaskWithSameId_secondTask" classname="TaskTest" time="0.0"/>
   <testcase name="clear_emptiesAllTasksFromArrayList_0" classname="TaskTest" time="0.0"/>

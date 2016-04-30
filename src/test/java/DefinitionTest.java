@@ -22,7 +22,7 @@ public class DefinitionTest {
   @Test
   public void Definition_instantiatesWithDescription_String() {
     Definition myDefinition = new Definition("Mow the lawn");
-    assertEquals("Mow the lawn", myDefinition.getDescription());
+    assertEquals("Mow the lawn", myDefinition.getDefinition());
   }
 
   @Test

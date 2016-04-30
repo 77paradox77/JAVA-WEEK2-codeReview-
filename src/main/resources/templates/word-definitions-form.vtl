@@ -1,12 +1,12 @@
-<h1>Add a task to $word.getName()</h1>
+<h1>Add a definition for your $word.getName()</h1>
 
-<form action="/tasks" method="post">
+<form action="/definitions" method="post">
   <input id="wordId" name="wordId" type="hidden" value="$word.getId()">
 
   <div class="form-group">
-    <label for="word">Got another one?</label>
-    <input id="word" name="word" type="text" class="form-control">
+    <label for="def1">Add your definition here</label>
+    <input id="def1" name="def1" type="text" class="form-control">
   </div>
 
-  <button type="submit" class="btn btn-success">Add another word</button>
+  <button type="submit" class="btn btn-success">Add!</button>
 </form>

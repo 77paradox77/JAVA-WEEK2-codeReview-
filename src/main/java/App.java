@@ -24,8 +24,8 @@ public class App {
 
     post("/words", (request, response) -> {
       HashMap<String, Object> model = new HashMap<String, Object>();
-      String word = request.queryParams("word");
-      Word newWord = new Word(word);
+      String phrase = request.queryParams("phrase");
+      Word newWord = new Word(phrase);
       model.put("template", "templates/word-success.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
@@ -49,20 +49,16 @@ public class App {
       HashMap<String, Object> model = new HashMap<String, Object>();
       Word word = Word.find(Integer.parseInt(request.params(":id")));
       model.put("word", word);
-      model.put("template", "templates/word-defintions-form.vtl");
+      model.put("template", "templates/word-definitions-form.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
     post("/definitions", (request, response) -> {
       HashMap<String, Object> model = new HashMap<String, Object>();
-
-      Word word = Word.find(Integer.parseInt(request.queryParams("define")));
-
-      String description = request.queryParams("description");
-      Definition newDefinition = new Definition(description);
-
+      Word word = Word.find(Integer.parseInt(request.queryParams("wordId")));
+      String def1 = request.queryParams("def1");
+      Definition newDefinition = new Definition(def1);
       word.addDefinition(newDefinition);
-
       model.put("word", word);
       model.put("template", "templates/word-definitions-success.vtl");
       return new ModelAndView(model, layout);

@@ -27,14 +27,14 @@ public class AppTest extends FluentTest {
     assertThat(pageSource()).contains("Dictionary");
   }
 
-  @Test
-  public void wordIsCreatedTest() {
-    goTo("http://localhost:4567/word-form.vtl");
-    click("a", withText("Add word"));
-    fill("#word").with("Apple");
-    submit(".btn");
-    assertThat(pageSource()).contains("Add a word");
-  }
+  // @Test
+  // public void wordIsCreatedTest() {
+  //   goTo("http://localhost:4567/word-form.vtl");
+  //   click("a", withText("Add word"));
+  //   fill("#word").with("Apple");
+  //   submit(".btn");
+  //   assertThat(pageSource()).contains("Add a word");
+  // }
 
   // @Test
   // public void wordIsDisplayedTest() {

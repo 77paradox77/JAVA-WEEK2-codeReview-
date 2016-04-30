@@ -4,13 +4,13 @@ import java.util.ArrayList;
 public class Definition {
   private static ArrayList<Definition> instances = new ArrayList<Definition>();
 
-  private String mDescription;
+  private String mDefinition;
   private boolean mCompleted;
   private LocalDateTime mCreatedAt;
   private int mId;
 
-  public Definition(String description) {
-    mDescription = description;
+  public Definition(String definition) {
+    mDefinition = definition;
     mCompleted = false;
     mCreatedAt = LocalDateTime.now();
     instances.add(this);
@@ -19,8 +19,8 @@ public class Definition {
 
 
 
-  public String getDescription() {
-    return mDescription;
+  public String getDefinition() {
+    return mDefinition;
   }
 
   public void completeDefinition(){
