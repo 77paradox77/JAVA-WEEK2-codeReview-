@@ -22,10 +22,10 @@ public class WordTest {
 
   @Test
   public void all_returnsAllInstancesOfWord_true() {
-      Word firstWord = new Word("Home");
-      Word secondWord = new Word("Work");
-      assertTrue(Word.all().contains(firstWord));
-      assertTrue(Word.all().contains(secondWord));
+    Word firstWord = new Word("Home");
+    Word secondWord = new Word("Work");
+    assertTrue(Word.all().contains(firstWord));
+    assertTrue(Word.all().contains(secondWord));
   }
 
   @Test
@@ -59,7 +59,4 @@ public class WordTest {
     testWord.addDefinition(testDefinition);
     assertTrue(testWord.getDefinitions().contains(testDefinition));
   }
-
-
-
 }
