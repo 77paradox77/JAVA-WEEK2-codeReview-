@@ -27,21 +27,27 @@ public class AppTest extends FluentTest {
     assertThat(pageSource()).contains("Dictionary");
   }
 
-  // @Test
-  // public void wordIsCreatedTest() {
-  //   goTo("http://localhost:4567/word-form.vtl");
-  //   click("a", withText("Add word"));
-  //   fill("#word").with("Apple");
-  //   submit(".btn");
-  //   assertThat(pageSource()).contains("Add a word");
-  // }
+  @Test
+  public void wordIsCreatedTest() {
+    goTo("http://localhost:4567/");
+    click("a", withText("Add a New Word"));
+    fill("#phrase").with("Blue");
+    submit(".btn");
+    assertThat(pageSource()).contains("Success!");
+  }
 
-  // @Test
-  // public void wordIsDisplayedTest() {
-  //   goTo("http://localhost:4567/words/new");
-  //   fill("#define").with("All Words");
-  //   submit(".btn");
-  //   click("a", withText("Add A New word"));
-  //   assertThat(pageSource()).contains(" ");
-  // }
+  @Test
+  public void wordIsDisplayedTest() {
+    goTo("http://localhost:4567/");
+    click("a", withText("View Word List"));
+    assertThat(pageSource()).contains("All Words");
+  }
+
+  @Test
+  public void wordCanBeAddedToWordList() {
+    goTo("http://localhost:4567/");
+    click("a", withText("View Word List"));
+    click("a", withText("Add A New word"));
+    assertThat(pageSource()).contains("Add a word");
+  }
 }

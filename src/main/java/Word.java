@@ -13,6 +13,7 @@ public class Word {
     mDefinitions = new ArrayList<Definition>();
   }
 
+// WILL ADD LOGIC FOR TESTING FOR WORDS AND TERMS 
   public String getName() {
     return mName;
   }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="WordTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2016-04-30T00:32:00" hostname="epicodus-54.local" time="0.003">
+<testsuite name="WordTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2016-04-30T01:53:34" hostname="epicodus-54.local" time="0.005">
   <properties/>
-  <testcase name="find_returnWordWithSameId_secondWord" classname="WordTest" time="0.0"/>
-  <testcase name="getDefinitions_initiallyReturnsEmptyList_ArrayList" classname="WordTest" time="0.001"/>
+  <testcase name="find_returnWordWithSameId_secondWord" classname="WordTest" time="0.001"/>
+  <testcase name="getDefinitions_initiallyReturnsEmptyList_ArrayList" classname="WordTest" time="0.0"/>
   <testcase name="addDefinition_addsDefinitionToList_true" classname="WordTest" time="0.0"/>
   <testcase name="clear_emptiesAllCategoriesFromList_0" classname="WordTest" time="0.001"/>
   <testcase name="find_returnsNullWhenNoWordFound_null" classname="WordTest" time="0.0"/>
